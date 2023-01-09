@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const dashboard = () => {
+export default function dashboardss() {
     return <div>dashboard</div>;
-};
+}

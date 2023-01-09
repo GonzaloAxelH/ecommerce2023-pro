@@ -1,39 +1,40 @@
 {
-  "name": "test",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy_w": "pnpm run build && rd -r output static && next export -o output && robocopy output static && python integration_script.py -d static",
-    "deploy_l": "pnpm run build && rm -rf output static && next export -o output &&  mv output static && python integration_script.py -d static"
-  },
-  "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "@heroicons/react": "^2.0.13",
-    "@tailwindcss/forms": "^0.5.3",
-    "next": "13.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.48.0",
-    "@typescript-eslint/parser": "^5.48.0",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.31.0",
-    "eslint-config-standard-with-typescript": "^26.0.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.31.11",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "typescript": "4.8.4"
-  }
+    "name": "test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build && next export",
+        "start": "next start",
+        "next": "next export -o output",
+        "lint": "next lint",
+        "deploy_w": "pnpm run build && rd -r output static && next export -o output && robocopy output static && python integration_script.py -d static",
+        "deploy_l": "sudo pnpm run build &&  rm -rf output static && next export -o output &&  mv output static && python3 integration_script.py -d static"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.7.7",
+        "@heroicons/react": "^2.0.13",
+        "@tailwindcss/forms": "^0.5.3",
+        "next": "13.0.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "autoprefixer": "^10.4.13",
+        "tailwindcss": "^3.2.4"
+    },
+    "devDependencies": {
+        "@types/node": "18.11.9",
+        "@types/react": "18.0.25",
+        "@types/react-dom": "18.0.8",
+        "@typescript-eslint/eslint-plugin": "^5.48.0",
+        "@typescript-eslint/parser": "^5.48.0",
+        "eslint": "^8.31.0",
+        "eslint-config-standard-with-typescript": "^26.0.0",
+        "eslint-import-resolver-typescript": "^3.5.2",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-react": "^7.31.11",
+        "postcss": "^8.4.21",
+        "typescript": "4.8.4"
+    }
 }

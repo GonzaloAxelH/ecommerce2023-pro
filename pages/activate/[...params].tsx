@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const Activate = () => {
+export default function Activate() {
     return <div>[...params]</div>;
-};
+}

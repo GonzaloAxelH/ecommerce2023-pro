@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const DashboardPaymentsDetail = () => {
+export default function DashboardPaymentsDetail() {
     return <div>[transaction_id]</div>;
-};
+}

@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const whishlist = () => {
+export default function whishlist() {
     return <div>whishlist</div>;
-};
+}
